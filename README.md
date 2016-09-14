@@ -11,7 +11,7 @@ With today’s ever increasing government surveillance and privacy-intruding ser
 [Coming soon]
 
 ### Diagram or sketch the architecture of the platform. The platform is what powers the app. 
-[Coming soon]
+![Platform architecture](notebook-img/platform_architecture.png)
 
 ### List and briefly describe the core functionality of the app, the most important functions and transactions of the app.
 * **Encrypt and send / receive and decrypt messages over SMS**
