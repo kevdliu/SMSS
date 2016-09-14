@@ -12,7 +12,6 @@ With today’s ever increasing government surveillance and privacy-intruding ser
 
 ### Diagram or sketch the architecture of the platform. The platform is what powers the app. 
 ![Platform architecture](notebook-img/platform_architecture.png)
-
 ### List and briefly describe the core functionality of the app, the most important functions and transactions of the app.
 * **Encrypt and send / receive and decrypt messages over SMS**
   * The encryption/decryption method used is RSA public key/asymmetric cryptosystem. Therefore, before a user can communicate securely with another user, they will need to “pair” with each other through the process of sending each other their respective public keys (via specially formatted SMS messages). Once each user has the other’s public key, the sender can encrypt the message with the receiver’s public key and the receiver can decrypt the message with its own private key. A new RSA key pair will be generated for each contact/pairing process to ensure users cannot decrypt messages not explicitly sent to them.  
