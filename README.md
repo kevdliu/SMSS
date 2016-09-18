@@ -8,7 +8,11 @@ With today’s ever increasing government surveillance and privacy-intruding ser
 * People who are wary of registering accounts (and thus giving out their email, name etc.)
 
 ### Using wireframes, sketch the most important views of the app.
-[Coming soon]
+![Messages list](notebook-img/messages_screen.png)
+![Conversation list](notebook-img/conversation_list.png)
+![Pairing request](notebook-img/request.png)
+![Pairing response](notebook-img/response.png)
+
 
 ### Diagram or sketch the architecture of the platform. The platform is what powers the app. 
 ![Platform architecture](notebook-img/platform_architecture.png)
