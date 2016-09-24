@@ -15,7 +15,7 @@ During the course of the week, we researched on the details of possible external
 * People who are wary of registering accounts (and thus giving out their email, name etc.)
 
 ### Wireframes
-![Messages list](notebook-img/messages_screen.png)
+![Messages list](notebook-img/message_screen.png)
 ![Conversation list](notebook-img/conversation_list.png)
 ![Pairing request](notebook-img/request.png)
 ![Pairing response](notebook-img/response.png)
