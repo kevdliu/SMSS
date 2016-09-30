@@ -4,6 +4,29 @@ With today’s ever increasing government surveillance and privacy-intruding ser
 
 ---------------------------------------
 
+### Update 9/29/2016
+This week we worked on creating a basic SMS interface that allows a user to send a message to a phone number. The interface includes basic validation to ensure that the recipient is a valid phone number, and that empty messages are not sent. We also discussed the best plan of attack for completing the app and decided it would be best to focus on the backend framework before implementing too much of the UI. This approach will hopefully allow us to spend less time refactoring in the long run. To this end, we began implementing some of the helper classes we anticipate we will need for functions such as encryption/decryption and data storage. RSAHelper has been completed, and a SQLite database helper is in progress. 
+
+There will be two main tables in the database: a Messages table and a Keys table.
+
+The Messages table will be used to store information about each individual message
+
+| Column id | Contact | Timestamp | Status | Body |
+| :-------- | :-------- | :-------- | :-------- | :------|
+| Unique id for each message | Phone number of contact | Timestamp of message | Number representing SENT, SENDING, RECEIVED, or ERROR | The body of the message |
+
+The Keys table will be used to store the various keys associated with each conversation. 
+
+| Column id | Contact | Private Key | Public Key |
+| :-------- | :-------- | :-------- | :-------- |
+| Unique id | Phone number of contact | Private key used for conversation | Public key used for conversation |
+
+The entire database will be encrypted with AES before being stored, and will require decryption for every use. The key will be the hash of a password chosen by the user.
+
+For next week we will continue implementing database functionality and begin looking into AES encrpytion.
+
+---------------------------------------
+
 ### Update 9/23/2016
 During the course of the week, we researched on the details of possible external library requirements and the usage of internal Android APIs, specifically the APIs for SMS and/or MMS communication. Namely, we discovered that java.security provides RSA encryption and decryption methods, so external libraries are not required on that front. In addition, java also provides ZipStream, which allows us to compress the messages for greater efficiency in regards to the SMS character limitation. Lastly, we read over the reference for SMS related Android APIs such as SmsManager to familiarize ourselves with their usage. The next step is to begin building the UI component of the application, namely the conversations list and the messages screen. Once we have the barebones UI and basic SMS features complete, we will then start on message encryption and decryption. 
 
