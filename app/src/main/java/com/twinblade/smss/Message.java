@@ -2,6 +2,11 @@ package com.twinblade.smss;
 
 public class Message {
 
+    public static final int STATUS_SENDING = 0;
+    public static final int STATUS_SENT = 1;
+    public static final int STATUS_RECEIVED = 2;
+    public static final int STATUS_ERROR = 3;
+
     private long mId;
     private String mContact;
     private long mTime;
