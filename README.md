@@ -4,6 +4,13 @@ With today’s ever increasing government surveillance and privacy-intruding ser
 
 ---------------------------------------
 
+### Update 10/7/2016
+This week we discovered that CDMA phones cannot send or receive data SMS messages. Since this functionality was crucial to our plan, we were forced to reconsider the direction we wanted to take with the project. After much deliberation, we decided to shift our energies to a more feasible project - [Poor Man's Home Stereo](https://github.com/kevdliu/PoorMansHomeStereo). This app will allow users who cannot afford a full home stereo system to still enjoy some of the experience by allowing Android phones to serve as speakers. By arranging the phones around the house, a user can have their music playing in any room they wish, or mimic a stereo setup with just two phones. This system will also allow users with non-networked speakers to use them as if they were. 
+
+We are currently working on the MVP for the app, focusing on implementing the ability to queue up a song to play from one phone on another.
+
+---------------------------------------
+
 ### Update 9/29/2016
 This week we worked on creating a basic SMS interface that allows a user to send a message to a phone number. The interface includes basic validation to ensure that the recipient is a valid phone number, and that empty messages are not sent. We also discussed the best plan of attack for completing the app and decided it would be best to focus on the backend framework before implementing too much of the UI. This approach will hopefully allow us to spend less time refactoring in the long run. To this end, we began implementing some of the helper classes we anticipate we will need for functions such as encryption/decryption and data storage. RSAHelper has been completed, and a SQLite database helper is in progress. 
 
